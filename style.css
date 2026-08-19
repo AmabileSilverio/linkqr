@@ -1,0 +1,513 @@
+body {
+    background-color: #f5f0ff;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0ff;
+    color: #17243d;
+}
+
+
+/* CABEÇALHO */
+
+.header {
+    height: 94px;
+    background-color: white;
+    border-bottom: 1px solid #ececf2;
+}
+
+.container {
+    width: 1180px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #17243d;
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.brand span span {
+    color: #7444e8;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #7444e8;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: #53617c;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 35px 0;
+}
+
+.menu a:hover {
+    color: #7444e8;
+}
+
+.menu a.active {
+    color: #7444e8;
+}
+
+
+/* BOTÃO GITHUB */
+
+.github-btn {
+    border: 1.5px solid #8a63e9;
+    border-radius: 9px;
+
+    padding: 10px 18px;
+
+    color: #29334a;
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.github-btn:hover {
+    background-color: #f1ebff;
+}
+/* HERO */
+
+.hero {
+    background-color: #f5f0ff;
+}
+
+.hero-content {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+    padding: 60px 0;
+}
+
+
+/* TEXTO DO HERO */
+
+.hero-text {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #7444e8;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    color: #17243d;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #7444e8;
+}
+
+.description {
+    max-width: 580px;
+
+    color: #61708c;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* BENEFÍCIOS */
+
+.features {
+    display: flex;
+
+    gap: 28px;
+
+    margin-top: 28px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #43506a;
+
+    font-size: 14px;
+}
+
+.feature span {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #7444e8;
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* IMAGEM / QR CODE */
+
+.hero-image {
+    flex: 0.85;
+
+    min-height: 315px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.browser-card {
+    width: 440px;
+    height: 290px;
+
+    border: 2px solid #cdbaff;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    box-shadow: 0 25px 50px rgba(101, 54, 210, 0.16);
+
+    overflow: hidden;
+}
+
+
+/* PARTE SUPERIOR DO NAVEGADOR */
+
+.browser-top {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding-left: 17px;
+
+    background: linear-gradient(
+        90deg,
+        #8d68ed,
+        #7950e5
+    );
+}
+
+.browser-top span {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background-color: white;
+}
+
+
+/* QR CODE */
+
+.qr-code {
+    width: 205px;
+    height: 205px;
+
+    margin: 22px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 25px rgba(40, 30, 70, 0.10);
+}
+
+.fake-qr {
+    width: 145px;
+    height: 145px;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #1f2937 0 5px,
+            transparent 5px 9px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            #1f2937 0 5px,
+            transparent 5px 9px
+        );
+}
+
+
+/* ÍCONE FLUTUANTE */
+
+.floating-icon {
+    position: absolute;
+
+    right: 3%;
+    top: 45%;
+
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background-color: white;
+
+    color: #7444e8;
+
+    font-size: 32px;
+
+    box-shadow: 0 15px 35px rgba(70, 45, 130, 0.16);
+}
+/* FORMULÁRIO DE ENCURTAMENTO */
+
+.generator {
+    background-color: #f5f0ff;
+    padding: 20px 0 45px;
+}
+
+.generator-card {
+    background-color: white;
+
+    border: 1px solid #ebe9f1;
+    border-radius: 20px;
+
+    padding: 32px 90px;
+
+    box-shadow: 0 18px 45px rgba(72, 42, 137, 0.10);
+}
+
+
+/* TÍTULO DO FORMULÁRIO */
+
+.generator-title {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.generator-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: #f1ebff;
+    color: #7444e8;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.generator-title h2 {
+    font-size: 25px;
+
+    color: #17243d;
+
+    margin-bottom: 3px;
+}
+
+.generator-title p {
+    color: #61708c;
+
+    font-size: 15px;
+}
+
+
+/* LABEL */
+
+.link-form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #17243d;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* CAMPO DE LINK */
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    height: 49px;
+
+    padding: 0 48px 0 16px;
+
+    border: 1.5px solid #cfd4e2;
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #17243d;
+
+    font-size: 14px;
+}
+
+.input-container input::placeholder {
+    color: #8a95aa;
+}
+
+.input-container input:focus {
+    border-color: #7444e8;
+
+    box-shadow: 0 0 0 4px rgba(116, 68, 232, 0.10);
+}
+
+.input-icon {
+    position: absolute;
+
+    right: 17px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #64728b;
+
+    font-size: 22px;
+}
+
+
+/* BOTÃO */
+
+.link-form button {
+    width: 100%;
+    height: 53px;
+
+    margin-top: 17px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #7342e5,
+        #7946df
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 9px 18px rgba(116, 68, 232, 0.20);
+
+    transition: 0.2s;
+}
+
+.link-form button:hover {
+    transform: translateY(-1px);
+
+    box-shadow: 0 12px 22px rgba(116, 68, 232, 0.28);
+}
+
+.link-form button span {
+    margin-right: 7px;
+}
+
+
+/* MENSAGEM DE SEGURANÇA */
+
+.security {
+    text-align: center;
+
+    color: #7a88a1;
+
+    font-size: 13px;
+
+    margin-top: 18px;
+}
