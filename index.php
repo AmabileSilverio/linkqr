@@ -159,5 +159,92 @@
     </div>
 
 </section>
+<section class="resources" id="recursos">
+
+    <div class="container resources-container">
+
+        <div class="resource">
+
+            <div class="resource-icon">
+                ↗
+            </div>
+
+            <div>
+                <h3>Links curtos</h3>
+
+                <p>
+                    Transforme links longos e complexos
+                    em links curtos e amigáveis.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="resource">
+
+            <div class="resource-icon">
+                ▦
+            </div>
+
+            <div>
+                <h3>QR Code instantâneo</h3>
+
+                <p>
+                    Gere QR Codes automaticamente
+                    para seus links encurtados.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="resource">
+
+            <div class="resource-icon">
+                ↗
+            </div>
+
+            <div>
+                <h3>Fácil de compartilhar</h3>
+
+                <p>
+                    Compartilhe seus links e QR Codes
+                    em qualquer lugar!
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about" id="sobre">
+
+    <div class="container">
+
+        <h2>Sobre o LinkQR</h2>
+
+        <p>
+            Uma aplicação web desenvolvida para encurtar links
+            e gerar QR Codes de forma simples, rápida e prática.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 LinkQR. Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
 </body>
 </html>

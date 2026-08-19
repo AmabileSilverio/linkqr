@@ -511,3 +511,211 @@ body {
 
     margin-top: 18px;
 }
+
+/* RECURSOS */
+
+.resources {
+    padding: 0 0 35px;
+}
+
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    background-color: #faf7ff;
+
+    border: 1px solid #ebe1ff;
+    border-radius: 13px;
+
+    padding: 25px 30px;
+}
+
+.resource {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 30px;
+}
+
+.resource + .resource {
+    border-left: 1px solid #e1d7f4;
+}
+
+
+/* ÍCONE */
+
+.resource-icon {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #7444e8;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* TEXTO */
+
+.resource h3 {
+    color: #17243d;
+
+    font-size: 15px;
+
+    margin-bottom: 4px;
+}
+
+.resource p {
+    color: #61708c;
+
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+/* SOBRE */
+
+.about {
+    text-align: center;
+
+    padding: 45px 0 35px;
+}
+
+.about h2 {
+    color: #17243d;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.about p {
+    color: #61708c;
+
+    font-size: 15px;
+}
+/* RODAPÉ */
+
+.footer {
+    text-align: center;
+
+    color: #7d879b;
+
+    font-size: 12px;
+
+    padding: 25px 0 35px;
+
+    border-top: 1px solid #ebe1ff;
+
+    background-color: #faf7ff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .description {
+        margin: 0 auto;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .resources-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .resource {
+        padding: 0;
+    }
+
+    .resource + .resource {
+        border-left: none;
+        border-top: 1px solid #e1d7f4;
+        padding-top: 25px;
+    }
+
+    .generator-card {
+        padding: 30px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 560px) {
+
+    .container {
+        width: calc(100% - 26px);
+    }
+
+    .header {
+        height: 76px;
+    }
+
+    .brand {
+        font-size: 23px;
+    }
+
+    .brand-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .github-btn {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .hero-content {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .browser-card {
+        width: 100%;
+        height: 240px;
+    }
+
+    .generator-card {
+        padding: 23px 18px;
+    }
+
+    .generator-title h2 {
+        font-size: 20px;
+    }
+
+    .generator-title p {
+        font-size: 13px;
+    }
+}
